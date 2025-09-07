@@ -1,0 +1,15 @@
+spring:
+  application:
+    name:Estudos_Java_Spring_Boot
+  datasource:
+    url: jdbc:mysql://localhost:3306/estudos_java_spring_boot?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: Tg844246a
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      show-sql: false
+    open-in-view: false
