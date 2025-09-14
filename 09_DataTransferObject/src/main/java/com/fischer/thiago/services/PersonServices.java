@@ -38,8 +38,8 @@ public class PersonServices {
 
     public PersonDTO create(PersonDTO person) {
         logger.info("Creating one person!");
-        repository.save(parseObject(person, Person.class));
-        return person;
+        Person entity= repository.save(parseObject(person, Person.class));
+        return parseObject(entity, PersonDTO.class);
     }
 
     public void delete(Long id) {
